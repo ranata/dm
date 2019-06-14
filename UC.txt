@@ -1,0 +1,6 @@
+Board Resolution	The ask in parsing a BR document was 1) to OCR and identify  key entities 
+	Extract Signatures and conver into Base64 format
+	Associate authrized signatory to a group. This will involves creating a language model using text corpuss and perform coreference and resolution to map the context against the entity
+	Understand and infer if a signatory is an addition or deletion 
+Document Classification	The key innovation here is to extract scanned images from a pdf file, classify what kind of document it is (passport, Singapore ID Card, Driving License etc). We are using a deep learning classification model using Inception V1 architecture on Keras/Tensorflow
+ID Card extraction of information	Majority of Passports and ID cards that we have from the client are very low quality scans of black and white photocopies. A vanilla OCR using the best of softwares Instabse ABBY have not given even average results. The innovation here is an attempt at performing a Super Resolution of these images and generate a higher resolution image quaility using Geerative Adversirial Network (GAN) or similar approach before applying OCR.
